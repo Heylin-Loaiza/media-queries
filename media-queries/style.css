@@ -1,0 +1,125 @@
+body {
+  margin: 0 auto;
+}
+
+header {
+  background-color: #aa1b27;
+  width: 100%;
+}
+
+.first-container,
+.second-container,
+.last-section {
+  width: 100%;
+}
+
+.first-container div{
+  background-color: #d12263;
+}
+
+.second-container div{
+  background-color: #aa1b27;
+}
+
+.last-section div {
+  background-color: #e8b1bd;
+}
+
+/* phone */
+@media (min-width: 320px) and (max-width: 640px) {
+  header {
+    height: 100px;
+    margin-bottom: 10px;
+  }
+
+  .first-container div {
+    height: 50px;
+    margin-bottom: 10px;
+  }
+
+  .second-container div {
+    height: 160px;
+    margin-bottom: 10px;
+  }
+
+  .last-section div{
+    height: 100px;
+    margin-bottom: 10px;
+  }
+}
+
+/* tablet */
+@media (min-width: 768px) and (max-width: 960px) {
+  header {
+    height: 130px;
+    margin-bottom: 20px;
+  }
+
+  .first-container div {
+    height: 50px;
+    margin-bottom: 20px;
+  }
+
+  .second-container div {
+    height: 80px;
+    margin-bottom: 20px;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .last-section{
+    width: 49%;
+  }
+
+  .last-section div{
+    height: 80px;
+    margin-bottom: 20px;
+  }
+}
+
+/* desktop */
+@media (min-width: 1024px) {
+  .main-container {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+
+  header {
+    height: 300px;
+    margin-bottom: 28px;
+  }
+
+  .first-container,
+  footer,
+  .second-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .first-container div {
+    width: 49%;
+    height: 70px;
+    margin-bottom: 28px;
+  }
+
+  .second-container div {
+    height: 160px;
+    margin-bottom: 28px;
+    width: 33%;
+  }
+
+  .last-section{
+    display: flex;
+    justify-content: space-between;
+    width: 49.5%;
+  }
+
+  .last-section div{
+    height: 150px;
+    margin-bottom: 20px;
+    width: 49%;
+  }
+}
